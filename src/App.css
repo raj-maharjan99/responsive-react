@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk&family=Lalezar&family=Monoton&family=Tillana:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+.gap {
+  gap: 5px;
+}
+.text {
+  text-align: center;
+}
+.justify {
+  justify-content: center;
+}
+.align {
+  align-items: center;
+}
+.flex-dir {
+  flex-direction: row;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.logo {
+  font-family: Lalezar;
+  font-size: 25px;
+}
+
+.ham3 {
+  width: 30px;
+  height: 5px;
+  background: black;
+
+  border-radius: 5px;
+}
+.ham1,
+.ham2 {
+  width: 30px;
+  height: 5px;
+  background: black;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+.hamburger {
+  flex-direction: column;
+  position: relative;
+}
+.hamburger:hover {
+  cursor: pointer;
+  top: 8px;
+}
+.hamburger:hover .ham3 {
+  visibility: hidden;
+}
+.hamburger:hover .ham1 {
+  transform: rotate(45deg);
+  position: relative;
+  transition-duration: 0.9s;
+}
+.hamburger:hover .ham2 {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -10px;
+  transition-duration: 0.9s;
+}
+.navbar {
+  width: 100%;
+  justify-content: space-between;
+
+  background: rgb(52, 86, 96);
+  color: #fff;
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav-title {
+  display: none;
+}
+.w-100 {
+  width: 100%;
+}
+.images {
+  width: 300px;
+  border: 2px solid black;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.img-store {
+}
+@media (min-width: 768px) {
+  .nav-title {
+    display: block;
+  }
+  .nav-title a {
+    text-decoration: none;
+    margin: 10px;
+    color: #fff;
+  }
+  .hamburger {
+    display: none;
+  }
+  .navbar {
+    background: rgb(62, 62, 73);
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}
